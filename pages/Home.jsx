@@ -3,6 +3,7 @@ import NavBar from '../components/Home/NavBar';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Button } from '@/components/ui/button';
 
 const Home = () => {
     const schema = z
@@ -61,6 +62,7 @@ const Home = () => {
                 {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
 
                 <input type="submit" />
+                <Button>Button</Button>
             </form>
         </div>
     );
