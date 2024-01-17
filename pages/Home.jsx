@@ -50,7 +50,7 @@ const Home = () => {
 
                 <label> Age </label>
                 <input type="number" {...register('age')} />
-                {errors.age && <p>{errors.age.message}</p>}
+                {errors.age && <p>{errors.age.message}zod</p>}
 
                 <label> Password: </label>
                 <input type="password" {...register('password')} />
